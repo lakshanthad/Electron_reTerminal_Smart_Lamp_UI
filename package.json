@@ -1,0 +1,19 @@
+{
+  "name": "testapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^13.1.4",
+    "electron-rebuild": "^2.3.5",
+    "electron-reloader": "^1.2.1"
+  },
+  "dependencies": {
+    "onoff": "^6.0.3"
+  }
+}

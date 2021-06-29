@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Test Application</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="style.css">
+        <script>
+            const { ipcRenderer } = require('electron');
+            function buttonclick1()
+            {
+                ipcRenderer.send("msg",1)
+            }
+    
+            function buttonclick2()
+            {
+                ipcRenderer.send("msg1",0)
+            }
+
+            function buttonclick3()
+            {
+                ipcRenderer.send("close-me")
+            }
+        </script>
+    </head>
+    <body>
+        <button class="button3" onclick="buttonclick3()">X</button>
+        <br>
+        <h1 class="heading">SMART LAMP</h1> 
+        <i class="material-icons">lightbulb</i>
+        <br>
+        <br>
+        <button class="button1" onclick="buttonclick1()">ON</button>
+        <br>
+        <button class="button2" onclick="buttonclick2()">OFF</button>
+    </body>
+</html>
